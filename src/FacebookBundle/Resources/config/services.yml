@@ -1,0 +1,4 @@
+services:
+    facebook.reader:
+        class: FacebookBundle\Service\FacebookReader
+        arguments: ["@security.token_storage", "%facebook_client_id%", "%facebook_client_secret%"]

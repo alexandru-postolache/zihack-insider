@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="body-wrapper">
+        <header>
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+                <img style="margin-right: 50px;" src="{{ asset('sitelogo.png') }}"/>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./" style="padding: 1em; margin-right: 10px; font-weight: normal;">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact" style="padding: 1em; margin-right: 10px; font-weight: normal;">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" style="padding: 1em; font-weight: normal;">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <div class="view intro hm-purple-light" style="">
+            <div class="full-bg-img flex-center">
+                <div class="container text-center text-white">
+                    <div style="height: 200px">
+                        <h2 id="joke">Started analysing and assembling your profile. This will take a while, so go ahead and enjoy some jokes.</h2>
+                    </div>
+                    <section>
+                        <div class="progress primary-color-dark">
+                            <div class="loader"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/tooltipster.bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/personality.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" />
+
+    {#<script src="/js/vendors/jquery-2.2.0.min.js"></script>#}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/personality-sunburst-chart@2.0.4/dist/index.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+{% endblock %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/Personality/LikelySummary.js') }}"></script>
+    <script src="{{ asset('js/Personality/TextSummary.js') }}"></script>
+    <script src="{{ asset('js/Personality/View.js') }}"></script>
+    <script src="{{ asset('js/Personality/Service.js') }}"></script>
+    <script src="{{ asset('js/joke.js') }}"></script>
+    <script type="text/template" id="card-template">
+        <div class="col-md-6 d-flex align-items-stretch mb-4">
+            <div class="card">
+                <div class="view overlay hm-white-slight">
+                    <img class="img-fluid" src="<%= url %>" alt="(Nothing)">
+                    <a href="#" onclick="return false;">
+                        <div class="mask"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-title"><h4>What we see here:</h4></div>
+                    <div class="flex-row">
+                        <% _.each(tags, function(tag){ %>
+                            <h4 style="display: inline-block; margin-bottom: 2px"><span style="" class="badge badge-primary"><%= tag %></span></h4>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/template" id="message-template">
+        <h5><b>Your text:</b> <%= message %></h5>
+        <h6><b>English translation:</b> <%= en %></h6>
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </script>
+    <script type="text/template" id="analyze-template">
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+                <img style="margin-right: 50px;" src="{{ asset('sitelogo.png') }}"/>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./" style="padding: 1em; margin-right: 10px">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact" style="padding: 1em; margin-right: 10px">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" style="padding: 1em;">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="full-bg-img-analyze"></div>
+        <div class='container fadeInUp' style='margin-top:200px;'>
+            <h1 class="analyze-title" style='margin-bottom: 50px;'>We analyzed all your photos. <br> Here are some of your feed's elements that we analyzed</h1>
+            <div class='row'>
+                <div id='photos' class='col-md-6'>
+                    <h2 class="analyze-title"><b>Your photos</b></h2>
+                    <div class='row'>
+                        </div>
+                    </div>
+                <div id='messages' class='col-md-6'>
+                    <h2 class="analyze-title"><b>Your posts</b></h2>
+                    <div class='card-body card'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid sun-burst-wrapper">
+            <div class="container">
+                <div id="sunburstChart"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid personality-wrapper">
+            <div class="container">
+                <h3>Personality Portrait</h3>
+                <h4><span id="words"></span> words analyzed</h4>
+                <div class="output-summary">
+                    <div class="output-summary--left">
+                        <h4 class="base--h4">Summary</h4>
+                        <div id="personalitySummary" class="output-summary--summary"><p class="base--p"></p></div>
+                    </div>
+                    <div class="output-summary--right">
+                        <div class="output-summary--consumption-behaviors--section">
+                            <h4 class="base--h4">You are likely to______ </h4>
+                            <div class="output-summary--likely-behaviors"><div class="output-summary--behavior output-summary--behavior_POSITIVE"><i class="icon icon-likely"></i><p class="likely0"></p></div>
+                                <div class="output-summary--behavior output-summary--behavior_POSITIVE"><i class="icon icon-likely"></i><p class="likely1"></p></div>
+                                <div class="output-summary--behavior output-summary--behavior_POSITIVE"><i class="icon icon-likely"></i><p class="likely2"></p></div>
+                            </div>
+                            <h4 class="base--h4">You are unlikely to______ </h4>
+                            <div class="output-summary--unlikely-behaviors"><div class="output-summary--behavior output-summary--behavior_NEGATIVE"><i class="icon icon-not-likely"></i><p class="unlikely0"></p></div>
+                                <div class="output-summary--behavior output-summary--behavior_NEGATIVE"><i class="icon icon-not-likely"></i><p class="unlikely1"></p></div>
+                                <div class="output-summary--behavior output-summary--behavior_NEGATIVE"><i class="icon icon-not-likely"></i><p class="unlikely2"></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="text_summary"></div>
+                <div id="personality_results"></div>
+                <div id="fb-share-button">
+                    <svg viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet">
+                        <path class="svg-icon-path" d="M9.1,0.1V2H8C7.6,2,7.3,2.1,7.1,2.3C7,2.4,6.9,2.7,6.9,3v1.4H9L8.8,6.5H6.9V12H4.7V6.5H2.9V4.4h1.8V2.8 c0-0.9,0.3-1.6,0.7-2.1C6,0.2,6.6,0,7.5,0C8.2,0,8.7,0,9.1,0.1z"></path>
+                    </svg>
+                    <a class="fb-xfbml-parse-ignore"
+                       target="_blank"
+                       href="https://www.facebook.com/sharer/sharer.php?u=http://insiders.zitec.ro/profile/<%= profileId %>&amp;src=sdkpreparse">Share</a>
+                </div>
+            </div>
+        </div>
+    </script>
+{% endblock %}

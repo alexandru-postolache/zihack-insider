@@ -1,0 +1,9 @@
+services:
+    app.credentials:
+        class: AppBundle\Services\Credentials
+        arguments:
+            - '@doctrine'
+    app.jokes:
+        class: AppBundle\Services\Jokes
+        arguments:
+            - '@doctrine'

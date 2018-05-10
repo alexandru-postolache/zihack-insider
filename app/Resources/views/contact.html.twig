@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="margin-bottom: 30px;">
+            {#<a class="navbar-brand" href="#"><strong>insider</strong></a>#}
+            <img style="margin-right: 50px;" src="{{ asset('sitelogo.png') }}"/>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        {#<a class="nav-link" href="./" style="padding: 1em;margin-left: 50px;margin-right: 10px;">Home</a>#}
+                        <a class="nav-link" href="./" style="padding: 1em;margin-right: 10px">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/contact" style="padding: 1em;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main Layout-->
+    {#<div class="view intro" style="padding-top: 50px">#}
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+        <div class="full-bg-img flex-left" style="margin-top: 10em;">
+            <div class="container text-left black-text bold shades wow fadeInUp">
+                <h1>Made by <b>Profilers</b> during ZiHack2017.</h1>
+                <br><h2>Team members:</h2></br>
+                <ul>
+                    <li class="container text-left"><a href="mailto:george.tutuianu@zitec.com"><b>George Țuțuianu</b></a></li>
+                    <li class="container text-left"><a href="mailto:alexandru.postolache@zitec.com"><b>Alexandru Postolache</b></a></li>
+                    <li class="container text-left"><a href="mailto:george.calcea@zitec.com"><b>George Calcea</b></a></li>
+                    <li class="container text-left"><a href="mailto:radu.ciobanica@zitec.com"><b>Radu Ciobănică</b></a></li>
+                </ul>
+            </div>
+        </div>
+    {#</div>#}
+
+    </main>
+    <!--Main Layout-->
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+{% endblock %}

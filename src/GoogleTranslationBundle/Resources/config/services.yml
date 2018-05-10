@@ -1,0 +1,3 @@
+services:
+    google.translate:
+        class: GoogleTranslationBundle\Services\Translate

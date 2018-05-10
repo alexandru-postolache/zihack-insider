@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        {#<a class="navbar-brand" href="#"><strong>Navbar</strong></a>#}
+        <img src="{{ asset('sitelogo.png') }}"/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="view intro hm-purple-light" style="">
+        <div class="full-bg-img flex-center">
+            <div class="container text-center text-white">
+                <div style="height: 200px">
+                    <h2 id="joke">Started analysing and assembling your profile. This will take a while, so go ahead and enjoy some jokes.</h2>
+                </div>
+                <section>
+                    <div class="progress primary-color-dark">
+                        <div class="loader"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/tooltipster.bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/personality.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" />
+
+    {#<script src="/js/vendors/jquery-2.2.0.min.js"></script>#}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/personality-sunburst-chart@2.0.4/dist/index.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+{% endblock %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/Personality/LikelySummary.js') }}"></script>
+    <script src="{{ asset('js/Personality/TextSummary.js') }}"></script>
+    <script src="{{ asset('js/Personality/View.js') }}"></script>
+    <script src="{{ asset('js/Personality/Service.js') }}"></script>
+    <script type="text/template" id="analyze-template">
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+                {#<a class="navbar-brand" href="#"><strong>insider</strong></a>#}
+                <img src="{{ asset('sitelogo.png') }}"/>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="full-bg-img-analyze"></div>
+
+        <div class="container-fluid personality-wrapper">
+            <div class="container">
+                <div class="output-summary">
+                    <div class="output-summary--left">
+                        <h4 class="base--h4">Summary</h4>
+                        <div id="personalitySummary" class="output-summary--summary"><p class="base--p"></p></div>
+                    </div>
+                    <div class="output-summary--right">
+                        <div class="output-summary--consumption-behaviors--section">
+                            <h4 class="base--h4">You are likely to______ </h4>
+                            <div class="output-summary--likely-behaviors"><div class="output-summary--behavior output-summary--behavior_POSITIVE"><i class="icon icon-likely"></i><p class="likely0"></p></div>
+                                <div class="output-summary--behavior output-summary--behavior_POSITIVE"><i class="icon icon-likely"></i><p class="likely1"></p></div>
+                                <div class="output-summary--behavior output-summary--behavior_POSITIVE"><i class="icon icon-likely"></i><p class="likely2"></p></div>
+                            </div>
+                            <h4 class="base--h4">You are unlikely to______ </h4>
+                            <div class="output-summary--unlikely-behaviors"><div class="output-summary--behavior output-summary--behavior_NEGATIVE"><i class="icon icon-not-likely"></i><p class="unlikely0"></p></div>
+                                <div class="output-summary--behavior output-summary--behavior_NEGATIVE"><i class="icon icon-not-likely"></i><p class="unlikely1"></p></div>
+                                <div class="output-summary--behavior output-summary--behavior_NEGATIVE"><i class="icon icon-not-likely"></i><p class="unlikely2"></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="text_summary"></div>
+                <div id="personality_results"></div>
+            </div>
+        </div>
+        <div class="container-fluid sun-burst-wrapper">
+            <div class="container">
+                <div id="sunburstChart"></div>
+            </div>
+        </div>
+    </script>
+
+    <script>
+        var analyzeTemplate = _.template($("#analyze-template").html());
+        var profileId = "{{ profileId }}";
+        $('body').html(analyzeTemplate({'profileId': profileId}));
+        var service = new PersonalityService(profileId);
+        service.startPersonalityProcess();
+
+    </script>
+{% endblock %}

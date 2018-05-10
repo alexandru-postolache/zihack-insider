@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <img style="margin-right: 50px;" src="{{ asset('sitelogo.png') }}"/>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./" style="padding: 1em; margin-right: 10px">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact" style="padding: 1em;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="view intro hm-light">
+            <div class="full-bg-img flex-center">
+                <div class="container text-center text-white">
+                    <h1 class="description">Find out your personality traits based on your Facebook activity</h1>
+                    <a href="{{ path('hwi_oauth_service_redirect', {'service': 'facebook' }) }}"><button style="margin-top:100px" type="button" class="btn btn-lg btn-primary">Analyze me</button></a>
+                    <a href="javascript: document.body.scrollIntoView(false);"><button style="margin-top:100px" type="button" class="btn btn-lg btn-primary">What it does</button></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main Layout-->
+    <main class="text-center py-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p align="justify"><h1><b>Project summary</b></h1></p>
+                    <i><p align="justify">Insider extracts data(photos and posts) from user's facebook profile. Posts are translated to english using the Translation API (Google Cloud) and tags are extracted from pictures using Clarifai AI. The data that has been gathered is fed to the Personality Insights service (IBM Watson) for personality predictions.</p></i>
+                    <p align="justify"><b>Google Cloud - Translation API</b></p>
+                    <p align="left">Cloud Translation API provides a simple programmatic interface for translating an arbitrary string into any supported language using state-of-the-art Neural Machine Translation. Translation API is highly responsive, so websites and applications can integrate with Translation API for fast, dynamic translation of source text from the source language to a target language (e.g., French to English). Language detection is also available in cases where the source language is unknown. The underlying technology pushes the boundary of Machine Translation and is updated constantly to seamlessly improve translations and introduce new languages and language pairs. </p>
+                    <p align="justify"><b>Clarifai AI - general model</b></p>
+                    <p align="left">The 'General' model recognizes over 11,000 different concepts including objects, themes, moods, and more. This model is a great all-purpose solution for most visual recognition needs. The API is built around a simple idea. You send inputs (an image or video) to the service and it returns predictions. The type of prediction is based on what model you run the input through. For example, if you run your input through the 'food' model, the predictions it returns will contain concepts that the 'food' model knows about. If you run your input through the 'color' model, it will return predictions about the dominant colors in your image.</p>
+                    <p align="justify"><b>IBM Watson - Personality Insights</b></p>
+                    <p align="left">The Personality Insights service uses linguistic analytics to infer the personality traits (“Big Five”), intrinsic needs, and values of individuals from communications that the user makes available via mediums such as email, text messages, tweets, forum posts, and more. The Big Five personality traits, also known as the five factor model (FFM), is a model based on common language descriptors of personality. When factor analysis (a statistical technique) is applied to personality survey data, some words used to describe aspects of personality are often applied to the same person.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!--Main Layout-->
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/personality.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+{% endblock %}

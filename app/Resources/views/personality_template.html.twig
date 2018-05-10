@@ -1,0 +1,1098 @@
+<div class="container">
+    <div class="_content">
+        <div class="output--stats-row">
+            <div class="output-big-5 output-stats-column">
+                <h4 class="base--h4">Personality</h4>
+                <div class="output-stats-column--percentile-label">*% =
+                    percentile
+                </div>
+                <div class="output-big-5--traits output-stats-column--traits">
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                            Introversion/Extraversion
+                            <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                            <div class="tooltip">
+                                <p>Higher: More energetic and pronounced engagement with the external world. Likes high
+                                    group visibility, talking, and asserting themselves.
+                                    Lower: Needs less stimulation and are more independent of their social world. It
+                                    does not mean they are shy, un-friendly, or antisocial.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['big5_extraversion']['percent'] }}%); transform: translate({{ data['big5_extraversion']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['big5_extraversion']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output-big-5--sub-tree">
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Cheerfulness
+                                <div class="tooltip">
+                                    <p>Tendency to experience or express positive emotions.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_cheerfulness']['percent'] }}%); transform: translate({{ data['facet_cheerfulness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_cheerfulness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Assertiveness
+                                <div class="tooltip">
+                                    <p>Forcefulness of expression; pursuit of leadership and social ascendancy; desire
+                                        to direct the activities of others.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_assertiveness']['percent'] }}%); transform: translate({{ data['facet_assertiveness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_assertiveness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Warmth
+                                <div class="tooltip">
+                                    <p>Interest in and friendliness towards others; socially confident.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_friendliness']['percent'] }}%); transform: translate({{ data['facet_friendliness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_friendliness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Gregariousness
+                                <div class="tooltip">
+                                    <p>Fondness for the company of others; sociability.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_gregariousness']['percent'] }}%); transform: translate({{ data['facet_gregariousness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_gregariousness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Activity level
+                                <div class="tooltip">
+                                    <p>Pace of living; level of busyness.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_activity_level']['percent'] }}%); transform: translate({{ data['facet_activity_level']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_activity_level']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Excitement-seeking
+                                <div class="tooltip">
+                                    <p>A need for environmental stimulation.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_excitement_seeking']['percent'] }}%); transform: translate({{ data['facet_excitement_seeking']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_excitement_seeking']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                            Conscientiousness
+                            <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                            <div class="tooltip">
+                                <p>Higher: More self-disciplined, dutiful, or aiming for achievement against measures or
+                                    outside expectations.
+                                    Lower: More likely to prefer the spontaneous over the planned.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['big5_conscientiousness']['percent'] }}%); transform: translate({{ data['big5_conscientiousness']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['big5_conscientiousness']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output-big-5--sub-tree">
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Self-discipline
+                                <div class="tooltip">
+                                    <p>Will-power; the capacity to begin tasks and follow through to completion in spite
+                                        of boredom or distractions.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_self_discipline']['percent'] }}%); transform: translate({{ data['facet_self_discipline']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_self_discipline']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Achievement striving
+                                <div class="tooltip">
+                                    <p>The need for personal achievement and sense of direction.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_achievement_striving']['percent'] }}%); transform: translate({{ data['facet_achievement_striving']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_achievement_striving']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Dutifulness
+                                <div class="tooltip">
+                                    <p>Sense of duty; amount of emphasis placed on fulfilling obligations.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_dutifulness']['percent'] }}%); transform: translate({{ data['facet_dutifulness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_dutifulness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Orderliness
+                                <div class="tooltip">
+                                    <p>Personal organization, tidiness, neatness.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_orderliness']['percent'] }}%); transform: translate({{ data['facet_orderliness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_orderliness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Cautiousness
+                                <div class="tooltip">
+                                    <p>Tendency to think things through before acting or speaking.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_cautiousness']['percent'] }}%); transform: translate({{ data['facet_cautiousness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_cautiousness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Self-efficacy
+                                <div class="tooltip">
+                                    <p>Belief in one's own competence.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_self_efficacy']['percent'] }}%); transform: translate({{ data['facet_self_efficacy']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_self_efficacy']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                            Agreeableness
+                            <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                            <div class="tooltip">
+                                <p>Higher: Value getting along with others. They have a more optimistic view of human
+                                    nature.
+                                    Lower: Value self interests over others. They are more skeptical of others'
+                                    motives.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['big5_agreeableness']['percent'] }}%); transform: translate({{ data['big5_agreeableness']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['big5_agreeableness']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output-big-5--sub-tree">
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Altruism
+                                <div class="tooltip">
+                                    <p>Active and genuine concern for the welfare of others.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_altruism']['percent'] }}%); transform: translate({{ data['facet_altruism']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_altruism']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Sympathy
+                                <div class="tooltip">
+                                    <p>Attitude of compassion for others; kindness.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_sympathy']['percent'] }}%); transform: translate({{ data['facet_sympathy']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_sympathy']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Cooperation
+                                <div class="tooltip">
+                                    <p>Dislike of confrontations. Responding to interpersonal conflict with a
+                                        willingness to compromise.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_cooperation']['percent'] }}%); transform: translate({{ data['facet_cooperation']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_cooperation']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Trust
+                                <div class="tooltip">
+                                    <p>Level of belief in the sincerity and good intentions of others.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_trust']['percent'] }}%); transform: translate({{ data['facet_trust']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_trust']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Straightforwardness
+                                <div class="tooltip">
+                                    <p>Frank and genuine in expression; candid, blunt.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_morality']['percent'] }}%); transform: translate({{ data['facet_morality']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_morality']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Modesty
+                                <div class="tooltip">
+                                    <p>Tendency to be unassuming and play down own achievements; humility.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_modesty']['percent'] }}%); transform: translate({{ data['facet_modesty']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_modesty']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                            Emotional range
+                            <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                            <div class="tooltip">
+                                <p><strong>This demo cannot diagnose a mental illness.</strong> Higher: More likely to
+                                    have negative emotions or get upset. It could mean they are going through a tough
+                                    time.
+                                    Lower: More calm and less likely to get upset. It does not mean they are positive,
+                                    or happy people.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['big5_neuroticism']['percent'] }}%); transform: translate({{ data['big5_neuroticism']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['big5_neuroticism']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output-big-5--sub-tree">
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Impulsiveness
+                                <div class="tooltip">
+                                    <p>Tendency to act on cravings and urges rather over resisting them or delaying
+                                        gratification.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_immoderation']['percent'] }}%); transform: translate({{ data['facet_immoderation']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_immoderation']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Fiery
+                                <div class="tooltip">
+                                    <p>Tendency to experience–but not necessarily express–anger or frustration.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_anger']['percent'] }}%); transform: translate({{ data['facet_anger']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_anger']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Sensitivity to stress
+                                <div class="tooltip">
+                                    <p>Difficulty in coping with stress or pressure in difficult situations.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_vulnerability']['percent'] }}%); transform: translate({{ data['facet_vulnerability']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_vulnerability']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Prone to worry
+                                <div class="tooltip">
+                                    <p>Tendency to dwell on difficulty or troubles; easily experience unease or
+                                        concern.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_anxiety']['percent'] }}%); transform: translate({{ data['facet_anxiety']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_anxiety']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Melancholy
+                                <div class="tooltip">
+                                    <p>Normal tendency to experience feelings of guilt, sadness, hopelessness, or
+                                        loneliness. <strong>This demo cannot diagnose a mental illness.</strong></p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_depression']['percent'] }}%); transform: translate({{ data['facet_depression']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_depression']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Self-consciousness
+                                <div class="tooltip">
+                                    <p>Concern with rejection, embarrassment; shyness.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_self_consciousness']['percent'] }}%); transform: translate({{ data['facet_self_consciousness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_self_consciousness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                            Openness
+                            <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                            <div class="tooltip">
+                                <p>Openness to experience. Higher: Intellectually curious, emotionally-aware, sensitive
+                                    to beauty and willing to try new things.
+                                    Lower: Preferring the plain, straightforward, and obvious over the complex,
+                                    ambiguous, and subtle.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['big5_openness']['percent'] }}%); transform: translate({{ data['big5_openness']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['big5_openness']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="output-big-5--sub-tree">
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Adventurousness
+                                <div class="tooltip">
+                                    <p>Eagerness to trying new activities and experiencing new things.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_adventurousness']['percent'] }}%); transform: translate({{ data['facet_adventurousness']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_adventurousness']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Emotionality
+                                <div class="tooltip">
+                                    <p>Emotional availability; awareness of own feelings.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_emotionality']['percent'] }}%); transform: translate({{ data['facet_emotionality']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_emotionality']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                                Artistic interests
+                                <div class="tooltip">
+                                    <p>Appreciation for art and beauty, both man-made and in nature.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_artistic_interests']['percent'] }}%); transform: translate({{ data['facet_artistic_interests']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_artistic_interests']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Imagination
+                                <div class="tooltip">
+                                    <p>Openness to creating an inner world of fantasy.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_imagination']['percent'] }}%); transform: translate({{ data['facet_imagination']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_imagination']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Authority-challenging
+                                <div class="tooltip">
+                                    <p>Openness to re-examine own values and traditions; readiness to challenge
+                                        authority.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_liberalism']['percent'] }}%); transform: translate({{ data['facet_liberalism']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_liberalism']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="percent-bar-and-score">
+                            <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                                Intellect
+                                <div class="tooltip">
+                                    <p>Intellectual curiosity; openness to new ideas.</p>
+
+                                </div>
+                            </div>
+                            <div class="percent-bar percent-bar-and-score--percent-bar">
+                                <div class="percent-bar--meter"
+                                     style="-webkit-transform: translate({{ data['facet_intellect']['percent'] }}%); transform: translate({{ data['facet_intellect']['percent'] }}%)">
+                                    <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                    <div class="percent-bar-and-score--number">
+                                        {{ data['facet_intellect']['percent'] }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="output-needs output-stats-column">
+                <h4 class="base--h4">Consumer Needs</h4>
+                <div class="output-stats-column--percentile-label">*% =
+                    percentile
+                </div>
+                <div class="output-needs--traits output-stats-column--traits">
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Excitement
+                            <div class="tooltip">
+                                <p>A need to pursue experiences or lead a lifestyle that arouses enthusiasm and
+                                    eagerness.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_excitement']['percent'] }}%); transform: translate({{ data['need_excitement']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_excitement']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Closeness
+                            <div class="tooltip">
+                                <p>A need to nurture or be nurtured; a feeling of belonging.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_closeness']['percent'] }}%); transform: translate({{ data['need_closeness']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_closeness']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Love
+                            <div class="tooltip">
+                                <p>Social contact, whether one-to-one or one-to-many.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_love']['percent'] }}%); transform: translate({{ data['need_love']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_love']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Challenge
+                            <div class="tooltip">
+                                <p>A desire to achieve, succeed, compete, or pursue experiences that test one's
+                                    abilities.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_challenge']['percent'] }}%); transform: translate({{ data['need_challenge']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_challenge']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Stability
+                            <div class="tooltip">
+                                <p>A need for the sensible, tried and tested, with a good track record and a known
+                                    history.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_stability']['percent'] }}%); transform: translate({{ data['need_stability']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_stability']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="output-needs--more-traits" style="display: none;">
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Liberty
+                            <div class="tooltip">
+                                <p>A need to escape, a desire for new experiences, new things.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_liberty']['percent'] }}%); transform: translate({{ data['need_liberty']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_liberty']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr class="base--hr output-stats-column--hr">
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                            Self-expression
+                            <div class="tooltip">
+                                <p>A desire to discover and assert one's identity.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_self_expression']['percent'] }}%); transform: translate({{ data['need_self_expression']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_self_expression']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                            Curiosity
+                            <div class="tooltip">
+                                <p>A need to pursue experiences that foster learning, exploration, and growth.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_curiosity']['percent'] }}%); transform: translate({{ data['need_curiosity']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_curiosity']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                            Harmony
+                            <div class="tooltip">
+                                <p>A need to appreciate or please other people, their viewpoints, and feelings.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_harmony']['percent'] }}%); transform: translate({{ data['need_harmony']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_harmony']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                            Practicality
+                            <div class="tooltip">
+                                <p>A desire for getting the job done, skill, and efficiency.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_practicality']['percent'] }}%); transform: translate({{ data['need_practicality']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_practicality']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                            Structure
+                            <div class="tooltip">
+                                <p>A need for organization, planning, and things that have a clear purpose.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_structure']['percent'] }}%); transform: translate({{ data['need_structure']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_structure']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                            Ideal
+                            <div class="tooltip">
+                                <p>A desire to satisfy one's idea of perfection in a lifestyle or experience, oftentimes
+                                    seen as pursuing a sense of community.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['need_ideal']['percent'] }}%); transform: translate({{ data['need_ideal']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['need_ideal']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="output-needs--toggle output-stats-column--toggle base--a"
+                   href="javascript:void(0);">&gt;&gt;</a>
+            </div>
+            <div class="output-values output-stats-column">
+                <h4 class="base--h4">Values</h4>
+                <div class="output-stats-column--percentile-label">*% =
+                    percentile
+                </div>
+                <div class="output-values--traits output-stats-column--traits">
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Helping others
+                            <div class="tooltip">
+                                <p>Preserving and enhancing the welfare of those with whom one is in frequent personal
+                                    contact.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['value_self_transcendence']['percent'] }}%); transform: translate({{ data['value_self_transcendence']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['value_self_transcendence']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Stimulation
+                            <div class="tooltip">
+                                <p>Excitement, novelty, and challenge in life.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['value_openness_to_change']['percent'] }}%); transform: translate({{ data['value_openness_to_change']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['value_openness_to_change']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Achievement
+                            <div class="tooltip">
+                                <p>Personal success through demonstrating competence according to social standards.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['value_self_enhancement']['percent'] }}%); transform: translate({{ data['value_self_enhancement']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['value_self_enhancement']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Taking pleasure in life
+                            <div class="tooltip">
+                                <p>Pleasure or sensuous gratification for oneself.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['value_hedonism']['percent'] }}%); transform: translate({{ data['value_hedonism']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['value_hedonism']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                            Tradition
+                            <div class="tooltip">
+                                <p>Respect, commitment, and acceptance of the customs and ideas that one's culture
+                                    and/or religion provides.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter"
+                                 style="-webkit-transform: translate({{ data['value_conservation']['percent'] }}%); transform: translate({{ data['value_conservation']['percent'] }}%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    {{ data['value_conservation']['percent'] }}%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

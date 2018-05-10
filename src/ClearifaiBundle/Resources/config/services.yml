@@ -1,0 +1,5 @@
+services:
+    clearifai.general_model:
+        class: ClearifaiBundle\Services\GeneralModel
+        arguments:
+            - '@app.credentials'

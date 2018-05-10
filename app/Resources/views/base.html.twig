@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta property="og:url"           content="http://insiders.zitec.ro/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Insider" />
+        <meta property="og:description"   content="Analyze your facebook profile/" />
+        <meta property="og:image"         content="{{ asset('sitelogo.png') }}" />
+        <title>{% block title %}Insider{% endblock %}</title>
+        {% block stylesheets %}
+
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('sitelogo_thumb_logo.png') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+            <script src="{{ asset('js/popper.min.js') }}"></script>
+            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('js/mdb.min.js') }}"></script>
+            <script src="{{ asset('js/underscore.js') }}"></script>
+            <script src="{{ asset('js/tooltipster.bundle.min.js') }}"></script>
+
+            <div id="fb-root"></div>
+
+
+        {% endblock %}
+    </body>
+            <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v2.10&appId=148765359067969';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+</html>

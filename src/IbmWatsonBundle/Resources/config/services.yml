@@ -1,0 +1,5 @@
+services:
+    ibm_watson.personality_insights:
+        class: IbmWatsonBundle\Services\PersonalityInsights
+        arguments:
+            - '@app.credentials'

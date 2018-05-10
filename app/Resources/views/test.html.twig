@@ -1,0 +1,1055 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="view intro hm-purple-light" style="">
+        <div class="full-bg-img flex-center">
+            <div class="container text-center text-white">
+                <div style="height: 200px">
+                    <h1 id="joke">Sa radem, zic!</h1>
+                </div>
+                <section>
+                    <div class="progress primary-color-dark">
+                        <div class="loader"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    {#TODO TODO TODO TODO#}
+    <div class="container">
+        <div class="_content">
+    <div class="output--stats-row">
+        <div class="output-big-5 output-stats-column">
+            <h4 class="base--h4">Personality</h4>
+            <div class="output-stats-column--percentile-label">*% =
+                percentile
+            </div>
+            <div class="output-big-5--traits output-stats-column--traits">
+
+
+                <div class="percent-bar-and-score toggled">
+                    <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                        Introversion/Extraversion
+                        <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                        <div class="tooltip">
+                            <p>Higher: More energetic and pronounced engagement with the external world. Likes high group visibility, talking, and asserting themselves.
+                                Lower: Needs less stimulation and are more independent of their social world. It does not mean they are shy, un-friendly, or antisocial.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(97%); transform: translate(97%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                97%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-big-5--sub-tree">
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Cheerfulness
+                            <div class="tooltip">
+                                <p>Tendency to experience or express positive emotions.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(97%); transform: translate(98%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    98%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Assertiveness
+                            <div class="tooltip">
+                                <p>Forcefulness of expression; pursuit of leadership and social ascendancy; desire to direct the activities of others.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(97%); transform: translate(97%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    97%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Warmth
+                            <div class="tooltip">
+                                <p>Interest in and friendliness towards others; socially confident.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(97%); transform: translate(97%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    97%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Gregariousness
+                            <div class="tooltip">
+                                <p>Fondness for the company of others; sociability.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(97%); transform: translate(95%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    95%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Activity level
+                            <div class="tooltip">
+                                <p>Pace of living; level of busyness.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(97%); transform: translate(76%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    76%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Excitement-seeking
+                            <div class="tooltip">
+                                <p>A need for environmental stimulation.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(97%); transform: translate(50%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    50%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                        Conscientiousness
+                        <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                        <div class="tooltip">
+                            <p>Higher: More self-disciplined, dutiful, or aiming for achievement against measures or outside expectations.
+                                Lower: More likely to prefer the spontaneous over the planned.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(96%); transform: translate(96%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                96%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-big-5--sub-tree">
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Self-discipline
+                            <div class="tooltip">
+                                <p>Will-power; the capacity to begin tasks and follow through to completion in spite of boredom or distractions.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(96%); transform: translate(95%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    95%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Achievement striving
+                            <div class="tooltip">
+                                <p>The need for personal achievement and sense of direction.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(96%); transform: translate(94%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    94%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Dutifulness
+                            <div class="tooltip">
+                                <p>Sense of duty; amount of emphasis placed on fulfilling obligations.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(96%); transform: translate(94%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    94%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Orderliness
+                            <div class="tooltip">
+                                <p>Personal organization, tidiness, neatness.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(96%); transform: translate(92%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    92%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Cautiousness
+                            <div class="tooltip">
+                                <p>Tendency to think things through before acting or speaking.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(96%); transform: translate(91%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    91%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Self-efficacy
+                            <div class="tooltip">
+                                <p>Belief in one's own competence.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(96%); transform: translate(89%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    89%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                        Agreeableness
+                        <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                        <div class="tooltip">
+                            <p>Higher: Value getting along with others. They have a more optimistic view of human nature.
+                                Lower: Value self interests over others. They are more skeptical of others' motives.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(77%); transform: translate(77%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                77%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-big-5--sub-tree">
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Altruism
+                            <div class="tooltip">
+                                <p>Active and genuine concern for the welfare of others.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(77%); transform: translate(92%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    92%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Sympathy
+                            <div class="tooltip">
+                                <p>Attitude of compassion for others; kindness.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(77%); transform: translate(86%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    86%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Cooperation
+                            <div class="tooltip">
+                                <p>Dislike of confrontations. Responding to interpersonal conflict with a willingness to compromise.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(77%); transform: translate(79%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    79%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Trust
+                            <div class="tooltip">
+                                <p>Level of belief in the sincerity and good intentions of others.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(77%); transform: translate(69%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    69%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Straightforwardness
+                            <div class="tooltip">
+                                <p>Frank and genuine in expression; candid, blunt.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(77%); transform: translate(68%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    68%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Modesty
+                            <div class="tooltip">
+                                <p>Tendency to be unassuming and play down own achievements; humility.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(77%); transform: translate(12%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    12%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                        Emotional range
+                        <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                        <div class="tooltip">
+                            <p><strong>This demo cannot diagnose a mental illness.</strong> Higher: More likely to have negative emotions or get upset. It could mean they are going through a tough time.
+                                Lower: More calm and less likely to get upset. It does not mean they are positive, or happy people.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(56%); transform: translate(56%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                56%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-big-5--sub-tree">
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Impulsiveness
+                            <div class="tooltip">
+                                <p>Tendency to act on cravings and urges rather over resisting them or delaying gratification.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(56%); transform: translate(90%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    90%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Fiery
+                            <div class="tooltip">
+                                <p>Tendency to experience–but not necessarily express–anger or frustration.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(56%); transform: translate(47%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    47%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Sensitivity to stress
+                            <div class="tooltip">
+                                <p>Difficulty in coping with stress or pressure in difficult situations.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(56%); transform: translate(28%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    28%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Prone to worry
+                            <div class="tooltip">
+                                <p>Tendency to dwell on difficulty or troubles; easily experience unease or concern.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(56%); transform: translate(24%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    24%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Melancholy
+                            <div class="tooltip">
+                                <p>Normal tendency to experience feelings of guilt, sadness, hopelessness, or loneliness. <strong>This demo cannot diagnose a mental illness.</strong></p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(56%); transform: translate(11%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    11%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Self-consciousness
+                            <div class="tooltip">
+                                <p>Concern with rejection, embarrassment; shyness.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(56%); transform: translate(6%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    6%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+                        Openness
+                        <i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+                        <div class="tooltip">
+                            <p>Openness to experience. Higher: Intellectually curious, emotionally-aware, sensitive to beauty and willing to try new things.
+                                Lower: Preferring the plain, straightforward, and obvious over the complex, ambiguous, and subtle.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(53%); transform: translate(53%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                53%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-big-5--sub-tree">
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Adventurousness
+                            <div class="tooltip">
+                                <p>Eagerness to trying new activities and experiencing new things.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(53%); transform: translate(89%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    89%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Emotionality
+                            <div class="tooltip">
+                                <p>Emotional availability; awareness of own feelings.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(53%); transform: translate(79%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    79%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_POSITIVE">
+                            Artistic interests
+                            <div class="tooltip">
+                                <p>Appreciation for art and beauty, both man-made and in nature.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(53%); transform: translate(61%)">
+                                <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    61%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Imagination
+                            <div class="tooltip">
+                                <p>Openness to creating an inner world of fantasy.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(53%); transform: translate(44%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    44%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Authority-challenging
+                            <div class="tooltip">
+                                <p>Openness to re-examine own values and traditions; readiness to challenge authority.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(53%); transform: translate(29%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    29%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percent-bar-and-score">
+                        <div class="percent-bar-and-score--label output-big-5--sub-trait-label output-big-5--sub-trait-label_NEGATIVE">
+                            Intellect
+                            <div class="tooltip">
+                                <p>Intellectual curiosity; openness to new ideas.</p>
+
+                            </div>
+                        </div>
+                        <div class="percent-bar percent-bar-and-score--percent-bar">
+                            <div class="percent-bar--meter" style="-webkit-transform: translate(53%); transform: translate(11%)">
+                                <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                                <div class="percent-bar-and-score--number">
+                                    11%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="output-needs output-stats-column">
+            <h4 class="base--h4">Consumer Needs</h4>
+            <div class="output-stats-column--percentile-label">*% =
+                percentile
+            </div>
+            <div class="output-needs--traits output-stats-column--traits">
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Excitement
+                        <div class="tooltip">
+                            <p>A need to pursue experiences or lead a lifestyle that arouses enthusiasm and eagerness.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(80%); transform: translate(80%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                80%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Closeness
+                        <div class="tooltip">
+                            <p>A need to nurture or be nurtured; a feeling of belonging.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(77%); transform: translate(77%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                77%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Love
+                        <div class="tooltip">
+                            <p>Social contact, whether one-to-one or one-to-many.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(75%); transform: translate(75%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                75%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Challenge
+                        <div class="tooltip">
+                            <p>A desire to achieve, succeed, compete, or pursue experiences that test one's abilities.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(65%); transform: translate(65%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                65%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Stability
+                        <div class="tooltip">
+                            <p>A need for the sensible, tried and tested, with a good track record and a known history.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(50%); transform: translate(50%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                50%</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="output-needs--more-traits" style="display: none;">
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Liberty
+                        <div class="tooltip">
+                            <p>A need to escape, a desire for new experiences, new things.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(50%); transform: translate(50%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                50%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr class="base--hr output-stats-column--hr">
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                        Self-expression
+                        <div class="tooltip">
+                            <p>A desire to discover and assert one's identity.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(44%); transform: translate(44%)">
+                            <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                44%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                        Curiosity
+                        <div class="tooltip">
+                            <p>A need to pursue experiences that foster learning, exploration, and growth.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(41%); transform: translate(41%)">
+                            <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                41%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                        Harmony
+                        <div class="tooltip">
+                            <p>A need to appreciate or please other people, their viewpoints, and feelings.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(35%); transform: translate(35%)">
+                            <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                35%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                        Practicality
+                        <div class="tooltip">
+                            <p>A desire for getting the job done, skill, and efficiency.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(31%); transform: translate(31%)">
+                            <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                31%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                        Structure
+                        <div class="tooltip">
+                            <p>A need for organization, planning, and things that have a clear purpose.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(27%); transform: translate(27%)">
+                            <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                27%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_NEGATIVE">
+                        Ideal
+                        <div class="tooltip">
+                            <p>A desire to satisfy one's idea of perfection in a lifestyle or experience, oftentimes seen as pursuing a sense of community.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(22%); transform: translate(22%)">
+                            <div class="percent-bar--ball percent-bar--ball_NEGATIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                22%</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="output-needs--toggle output-stats-column--toggle base--a" href="javascript:void(0);">&gt;&gt;</a>
+        </div>
+        <div class="output-values output-stats-column">
+            <h4 class="base--h4">Values</h4>
+            <div class="output-stats-column--percentile-label">*% =
+                percentile
+            </div>
+            <div class="output-values--traits output-stats-column--traits">
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Helping others
+                        <div class="tooltip">
+                            <p>Preserving and enhancing the welfare of those with whom one is in frequent personal contact.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(75%); transform: translate(75%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                75%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Stimulation
+                        <div class="tooltip">
+                            <p>Excitement, novelty, and challenge in life.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(71%); transform: translate(71%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                71%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Achievement
+                        <div class="tooltip">
+                            <p>Personal success through demonstrating competence according to social standards.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(63%); transform: translate(63%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                63%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Taking pleasure in life
+                        <div class="tooltip">
+                            <p>Pleasure or sensuous gratification for oneself.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(61%); transform: translate(61%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                61%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="percent-bar-and-score">
+                    <div class="percent-bar-and-score--label percent-bar-and-score--label_POSITIVE">
+                        Tradition
+                        <div class="tooltip">
+                            <p>Respect, commitment, and acceptance of the customs and ideas that one's culture and/or religion provides.</p>
+
+                        </div>
+                    </div>
+                    <div class="percent-bar percent-bar-and-score--percent-bar">
+                        <div class="percent-bar--meter" style="-webkit-transform: translate(50%); transform: translate(50%)">
+                            <div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+                            <div class="percent-bar-and-score--number">
+                                50%</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    {#TODO TODO TODO TODO#}
+
+
+
+
+
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/tooltipster.bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/personality.css') }}" />
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {#<script src="{{ asset('js/joke.js') }}"></script>#}
+    <script type="text/template" id="card-template">
+        <div class="col-md-6 d-flex align-items-stretch mb-4">
+            <div class="card">
+                <img class="img-fluid" src="<%= url %>" alt="(Nothing)">
+                <div class="card-body">
+                    <div class="card-title"><h4>What we see here:</h4></div>
+                    <div class="flex-row">
+                        <% _.each(tags, function(tag){ %>
+                        <h4 style="display: inline-block; margin-bottom: 2px"><span style="" class="badge badge-primary"><%= tag %></span></h4>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/template" id="message-template">
+        <div class="col-md-6 d-flex align-items-stretch mb-4">
+            <div class="card card-body">
+                <div class="card-title"><h4>Your text: <%= message %></h4></div>
+                <p>English translation: <%= en %></p>
+            </div>
+        </div>
+    </script>
+{% endblock %}

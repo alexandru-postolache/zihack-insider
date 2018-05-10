@@ -1,0 +1,35 @@
+AppBundle\Entity\Peoples:
+    type: entity
+    table: peoples
+    repositoryClass: AppBundle\Repository\PeoplesRepository
+
+    id:
+        id:
+            type: integer
+            id: true
+            options:
+                unsigned: true
+            generator:
+                strategy: AUTO
+    fields:
+        data:
+            type: text
+        personality:
+            type: text
+            nullable: true
+        profileId:
+            type: string
+            length: 32
+            option:
+                fixed: true
+    manyToOne:
+        user:
+            targetEntity: UserBundle\Entity\User
+            cascade: { }
+            mappedBy: null
+            inversedBy: null
+            joinColumn:
+                referencedColumnName: id
+                name: user_id
+                nullable: false
+            orphanRemoval: false
