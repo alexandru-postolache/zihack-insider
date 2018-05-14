@@ -16,4 +16,4 @@ UserBundle\Entity\User:
         added:
             type: datetime
             options:
-                default: CURRENT_TIMESTAMP
+                default: 0
